@@ -1,13 +1,27 @@
+import { FaRegUser, FaPhone } from 'react-icons/fa';
+
 import s from './Contact.module.css';
 
-const Contact = ({ contact }) => {
+const Contact = ({ contact, handleDelete, id }) => {
   return (
     <div className={s.wrapper}>
       <div>
-        <p>{contact.name}</p>
-        <p>{contact.number}</p>
+        <p>
+          <FaRegUser className={s.icon} />
+          {contact.name}
+        </p>
+        <p>
+          <FaPhone className={s.icon} />
+          {contact.number}
+        </p>
       </div>
-      <button type="button">Delete</button>
+      <button
+        onClick={() => handleDelete(id)}
+        type="button"
+        className={s.button}
+      >
+        Delete
+      </button>
     </div>
   );
 };

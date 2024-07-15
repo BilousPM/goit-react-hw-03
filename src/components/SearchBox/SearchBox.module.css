@@ -1,4 +1,5 @@
 .label {
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -7,7 +8,7 @@
 .input {
   padding: 5px;
   border-radius: 8px;
-  box-shadow: 2px 2px 2px 4px gray;
+  box-shadow: 2px 2px 2px 4px rgb(221, 214, 214, 0.3);
   margin-bottom: 20px;
   width: 250px;
 }
